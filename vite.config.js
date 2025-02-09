@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [react(),tailwindcss()],
   build: {
     rollupOptions: {
-      external: ['react', 'react-dom'] // Não inclui React e ReactDOM no bundle final
+      external: ['react', 'react-dom','jspdf'] // Não inclui React e ReactDOM no bundle final
     }
   }
 })
