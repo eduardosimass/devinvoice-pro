@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://eduardosimmas.github.io/devinvoice-pro",
+  "homepage": "https://eduardosimass.github.io/devinvoice-pro",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -20,6 +20,7 @@
     "@tailwindcss/vite": "^4.0.5",
     "dom-to-image": "^2.6.0",
     "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
+import { jsPDF } from 'jspdf';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {
     Container,
@@ -483,7 +483,7 @@ const GeradorDeFaturas = () => {
             const input = faturaRef.current;
             const canvas = await html2canvas(input, { scale: 2 });
 
-            const pdf = new jsPDF('p', 'mm', 'a4');
+            const pdf = new jsPDF('p', 'cm', 'a4');
             const pdfWidth = pdf.internal.pageSize.getWidth();
             const pdfHeight = pdf.internal.pageSize.getHeight();
 
